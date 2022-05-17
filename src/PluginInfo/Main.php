@@ -2,7 +2,7 @@
 
 //ALL THE RIGHTS RESERVED BY ESTEM0
 
-namespace PluginInfo
+namespace PluginInfo;
 
 use pocketmine\PluginBase;
 
@@ -16,7 +16,7 @@ use pocketmine\command\CommandSender;
 
 class Main extends PluginBase implements Listener{
 
-  public function(){ 
+  public function onEnable(){ 
   $this->getLogger->info('InfoBasic Ligado') }
 
 }
