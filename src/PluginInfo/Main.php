@@ -17,6 +17,6 @@ use pocketmine\command\CommandSender;
 class Main extends PluginBase implements Listener{
 
   public function onEnable(){ 
-  $this->getLogger->info('InfoBasic Ligado') }
-
+  $this->getLogger->info('InfoBasic Ligado') 
+  }
 }
