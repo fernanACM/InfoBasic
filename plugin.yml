@@ -1,9 +1,11 @@
 name: InfoBasic
 main: PluginInfo
 author: Estem0
-version: (1.0)
+version: 1.0
 api: [2.0.0, 3.0.0-ALPHA10, 3.0.0-ALPHA11]
 
-Commands
-Command: Info
-Decripition: Informação
+command:
+
+cmd:
+      Description: informação
+      usage: /Info
