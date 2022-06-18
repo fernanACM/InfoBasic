@@ -1,6 +1,6 @@
 name: InfoBasic
 main: PluginInfo/Main
-author: Estem0
+author: Estem0, Gelumaxon, MatheusN
 version: 1.0
 api: [2.0.0, 2.1.0, 3.0.0-ALPHA10, 3.0.0-ALPHA11]
 
