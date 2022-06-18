@@ -2,7 +2,7 @@ name: InfoBasic
 main: PluginInfo/Main
 author: Estem0
 version: 1.0
-api: [2.0.0, 3.0.0-ALPHA10, 3.0.0-ALPHA11]
+api: [2.0.0, 2.1.0, 3.0.0-ALPHA10, 3.0.0-ALPHA11]
 
 command:
 
