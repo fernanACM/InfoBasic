@@ -4,7 +4,7 @@
 
 namespace Estem01\InfoBasic;
 
-use pocketmine\PluginBase;
+use pocketmine\plugin\PluginBase;
 
 use pocketmine\player\Player;
 
