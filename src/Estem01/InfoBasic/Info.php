@@ -16,8 +16,6 @@ use pocketmine\command\CommandSender;
 
 use pocketmine\event\Listener;
 
-use pocketmine\Config;
-
 class Info extends PluginBase implements Listener{
 
   public function onEnable() : void{ 
@@ -32,7 +30,9 @@ class Info extends PluginBase implements Listener{
   $this->$info = getConfig()->get("message", []);
 
   $sender->sendMessage("$info");
+
       }
     }
+   return true;
   }
 }
