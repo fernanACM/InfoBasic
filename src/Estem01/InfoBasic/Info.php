@@ -2,7 +2,7 @@
 
 //ALL THE RIGHTS RESERVED BY ESTEM0
 
-namespace PluginInfo;
+namespace Estem01\InfoBasic;
 
 use pocketmine\PluginBase;
 
@@ -18,7 +18,7 @@ use pocketmine\event\Listener;
 
 use pocketmine\Config;
 
-class Main extends PluginBase implements Listener{
+class Info extends PluginBase implements Listener{
 
   public function onEnable() : void{ 
   $this->getServer()->getPluginManager()->registerEvents($this,$this);
