@@ -18,16 +18,19 @@ use pocketmine\event\Listener;
 
 class Info extends PluginBase implements Listener{
 
+  public Config $config;
+
   public function onEnable() : void{ 
   $this->getServer()->getPluginManager()->registerEvents($this,$this);
   $this->saveDefaultConfig();
   }
    
   public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args) : bool{
-  if($cmd->getName() == "info"){
+  switch($cmd->getName(){
+   case "info";
   if(!$sender instanceof Player){
   
-  $this->$info = getConfig()->get("message", []);
+  $this->$info = $this->config->get("message", []);
 
   $sender->sendMessage("$info");
 
