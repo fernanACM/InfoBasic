@@ -26,7 +26,7 @@ class Info extends PluginBase implements Listener{
   }
    
   public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args) : bool{
-  switch($cmd->getName(){
+  switch($cmd->getName()){
    case "info";
   if(!$sender instanceof Player){
   
