@@ -1,3 +1,4 @@
+[![](https://poggit.pmmp.io/shield.state/InfoBasic)](https://poggit.pmmp.io/p/InfoBasic)
 # 📝 InfoBasic
 
 A Basic Info Plugin For PocketMine
