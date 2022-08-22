@@ -1,3 +1,4 @@
 #Insert your information message Note: use § and a number or letter to color the text type §4Red
+#To skip lines you put \n
 
-message: ['your information']
+message: ["your information"]
