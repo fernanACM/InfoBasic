@@ -16,6 +16,8 @@ use pocketmine\command\CommandSender;
 
 use pocketmine\event\Listener;
 
+use pocketmine\utils\Config;
+
 class Info extends PluginBase implements Listener{
 
   public Config $config;
@@ -31,7 +33,7 @@ class Info extends PluginBase implements Listener{
    case "info";
   if(!$sender instanceof Player){
   
-  $this->$info = $this->getConfig->get("Message);
+  $this->$info = $this->getConfig->get("mensagem");
 
   $sender->sendMessage("$info");
 
