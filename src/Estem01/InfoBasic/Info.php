@@ -22,7 +22,8 @@ class Info extends PluginBase implements Listener{
 
   public function onEnable() : void{ 
   $this->getServer()->getPluginManager()->registerEvents($this,$this);
-  $this->saveDefaultConfig();
+  $this->saveResource("config.yml");
+  $this->config = new Config($this->getDataFolder() . "config.yml");
   }
    
   public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args) : bool{
@@ -30,7 +31,7 @@ class Info extends PluginBase implements Listener{
    case "info";
   if(!$sender instanceof Player){
   
-  $this->$info = $this->config->get("message", []);
+  $this->$info = $this->getConfig->get("Message);
 
   $sender->sendMessage("$info");
 
