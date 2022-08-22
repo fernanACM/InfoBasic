@@ -5,17 +5,11 @@
 namespace Estem01\InfoBasic;
 
 use pocketmine\plugin\PluginBase;
-
 use pocketmine\player\Player;
-
 use pocketmine\Server;
-
 use pocketmine\command\Command;
-
 use pocketmine\command\CommandSender;
-
 use pocketmine\event\Listener;
-
 use pocketmine\utils\Config;
 
 class Info extends PluginBase implements Listener{
@@ -33,7 +27,7 @@ class Info extends PluginBase implements Listener{
    case "info";
   if(!$sender instanceof Player){
   
-  $info = $this->getConfig->get("mensagem");
+  $info = $this->getConfig()->get("message");
 
   $sender->sendMessage("$info");
 
