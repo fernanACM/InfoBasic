@@ -5,4 +5,5 @@ branches:
 projects:
   InfoBasic:
     path: ""
+    Icon: "Info.jpeg"
 ...
