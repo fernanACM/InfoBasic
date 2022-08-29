@@ -27,7 +27,7 @@ class Info extends PluginBase implements Listener{
    case "info";
   if(!$sender instanceof Player){
   
-  $info = $this->getConfig()->get("message");
+  $info = $this->config->getConfig()->get("message");
 
   $sender->sendMessage("$info");
 
