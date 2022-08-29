@@ -9,15 +9,13 @@ use pocketmine\player\Player;
 use pocketmine\Server;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
-use pocketmine\event\Listener;
 use pocketmine\utils\Config;
 
-class Info extends PluginBase implements Listener{
+class Info extends PluginBase{
 
   public Config $config;
 
   public function onEnable() : void{ 
-  $this->getServer()->getPluginManager()->registerEvents($this,$this);
   $this->saveResource("config.yml");
   $this->config = new Config($this->getDataFolder() . "config.yml");
   }
@@ -27,7 +25,7 @@ class Info extends PluginBase implements Listener{
    case "info";
   if(!$sender instanceof Player){
   
-  $info = $this->config->getConfig()->get("message");
+  $info = $this->config->get("message");
 
   $sender->sendMessage("$info");
 
